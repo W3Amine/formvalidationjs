@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/validation.css">
+</head>
+<body>
+<!-- navbar code end here  -->
+<br><br><br><br><br><br><br><br>
+<section class="form container mt-3" >
+    <div id="alertbox" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <form id="forma" action="/success.html">
+<div class="row " >
+        <div class="form-floating col ">
+            <input  name="firstname" type="text" class="form-control" id="floatingInput" placeholder="your firstname">
+            <label for="floatingInput">firstname</label>
+            <div id="usernameeror" class="invalid-feedback" >
+            </div>
+          </div>
+          <div class="form-floating col">
+            <input   name="lastname" type="text" class="form-control" id="floatingPassword" placeholder="lastname">
+            <label  for="floatingPassword">lastname</label>
+            <div id="lastnameerror" class="invalid-feedback">
+            </div>
+          </div>
+        </div>
+      <div class="form-floating mt-3 ">
+            <input name="theemail"  type="email" class="form-control" id="floatingEmail" placeholder="email">
+            <label for="floatingEmail">email</label>          
+                      <div id="emailerror" class="invalid-feedback" >
+                      </div>
+          </div>
+      <div class="form-floating mt-3 ">
+        <input  name="phone"  type="text" class="form-control" id="floatingPhone" placeholder="Phone number">
+        <label for="floatingPhone">Phone number</label>
+        <div id="phoneerror" class="invalid-feedback" >
+        </div>
+      </div>
+<div class="row mt-4">
+<div class="col ">
+<p>Gender</p>
+<div class="form-check col ">
+    <input class="form-check-input" type="radio" name="gender" value="male" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+    male
+    </label>
+  </div>
+  <div class="form-check col ">
+    <input class="form-check-input" type="radio" value="female" name="gender" id="flexRadioDefault2">
+    <label class="form-check-label" for="flexRadioDefault2">
+      female
+    </label>
+  </div>
+</div>
+<div class="col row ">
+    <p>Groupe</p>
+    <div class="form-check col ">
+        <input class="form-check-input" type="radio" name="groupe" id="flexRadioDefault3">
+        <label class="form-check-label" for="flexRadioDefault3">
+            DW101
+        </label>
+      </div>
+      <div class="form-check col ">
+        <input class="form-check-input" type="radio" name="groupe" id="flexRadioDefault4">
+        <label class="form-check-label" for="flexRadioDefault4">
+            DW102
+        </label>
+      </div>
+      <div class="form-check col ">
+        <input class="form-check-input" type="radio" name="groupe" id="flexRadioDefault5">
+        <label class="form-check-label" for="flexRadioDefault5">
+            DW103
+        </label>
+      </div>
+      <div class="form-check col ">
+        <input class="form-check-input" type="radio" name="groupe" id="flexRadioDefault6">
+        <label class="form-check-label" for="flexRadioDefault6">
+            DM101
+        </label>
+      </div>
+      <div class="form-check col ">
+        <input class="form-check-input" type="radio" name="groupe" id="flexRadioDefault7">
+        <label class="form-check-label" for="flexRadioDefault7">
+            DM102
+        </label>
+      </div>
+    </div>
+</div>
+<div class="col">
+    <p>Clubs</p>
+    <select name="clubs" class="form-select" multiple aria-label="Default select example">
+        <option value="Informatique">Informatique</option>
+        <option value="Robotique">Robotique</option>
+        <option value="Jeu d'échecs">Jeu d'échecs</option>Musique
+        <option value="Musique">Musique</option>
+        <option value="Foot">Foot</option>
+        <option value="Théatre">Théatre</option>
+      </select>
+</div>
+<button type="submit" id="submittheform" class="btn btn-lg btn-success mt-4 "> Send </button>
+    </form>
+</section>
+<div class="d-flex">
+  <div class="form-floating mb-3 me-2 col">
+    <input type="text" class="form-control" id="nom" placeholder="" />
+    <label for="floatingInput">Nom</label>
+    <span id="error"></span>
+  </div>
+  <div class="form-floating col">
+    <input
+      type="text"
+      class="form-control"
+      id="prenom"
+      placeholder=""
+    />
+    <label for="floatingInput">Prénom</label>
+    <span id="error2"></span>
+  </div>
+</div>
+    <script src="scripts/validation.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>
